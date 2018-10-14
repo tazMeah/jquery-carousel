@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JQuery Carousel</title>
+    <link href="styles.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <div id="carousel">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <button id="previous"><</button>
+        <button id="next">></button>
+      </div>
+
+      <p>This is my first attempt at making an image carousel. My logic was that I'd have a parent container with more than 3 images (divs) in it, but only enough room to display the first 3 in a CSS Grid.</p>
+      <p>Clicking the NEXT button will make the first div have a display of "none" instead "block". That makes the other divs after it collapse to fill in that space (showing divs 2, 3, and 4).
+          Clicking the NEXT button again needed to make the div number 2 do the same thing, instead of div number 1.
+      </p>
+      <p>So I set a counter before the click event. The counter begins at 1. Clicking the NEXT button makes div:nth-child(counter) display = none, then adds one to the counter. But where to stop the counter?
+          So I put a conditional statement on the click event. If the counter was less than the length (or number) of divs in the parent element, then change the display and increment the counter.
+      </p>
+      <p>The next problem with this solution was that I wanted the carousel to always have images inside of it. Consider if the number of images inside the parent element were 3. If by default, you could see 3 images in the carousel, the counter is initialized to 1, 1 is less than the number of images, so you can click NEXT and shift the carousel over to the left. Now, there are two images in the carousel: number 2, number 3, and a blank spot. Counter is now at 2. 2 is less than 3, so you can click the  next button again. The images shift to the left, and 1 image is displayed (number 3) with two blanks. Counter is now 3. 3 is not less than 3, so the NEXT button no longer works with this conditional statement.</p>
+      <p>Since I want there to always be a filled carousel, I changed the conditional statement to be such that you can click the NEXT button so long as counter is less than the number of images in the carousel, minus 2. Now, at the starting point (counter = 1) with 3 images in the carousel, 1 is not less than the total number of images (3) minus 2, so clicking the NEXT button does nothing.</p>
+      <p>Then I wanted to add a PREVIOUS button. If the counter is 1, the PREVIOUS button needn't work. So the conditional statement is that it works if counter is greater than 1. If so, it makes the image before the counter (or counter - 1) set to display block. Then it decrements the counter by 1.</p>
+      <p>I may refactor this later, but it seems to work okay, for now.</p>
+      <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+ 
+
+      <script src="scripts.js"></script>
+</body>
+</html>

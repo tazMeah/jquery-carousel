@@ -1,0 +1,104 @@
+#carousel {
+    width: 600px;
+    height: 200px;
+    margin: 0 auto;
+  /*   border: 1px solid black; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    position: relative;
+    box-sizing: border-box;
+    
+  }
+  
+  #carousel div {
+    background: pink;
+  }
+  
+  #carousel div:nth-child(2) {
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    background: url("https://images.unsplash.com/photo-1539314171919-908b0cd96f03?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3eecf9d3c6b9435476c2967d1c5f35a1&auto=format&fit=crop&w=500&q=60") center no-repeat;
+    background-size: cover;
+    
+  }
+  
+  #next {
+    position: absolute;
+    top: 50%;
+    right: 0;
+  }
+  
+  #previous {
+    position: absolute;
+    top: 50%;
+  }
+  
+  #carousel div:nth-child(1) {
+    background: url(https://images.unsplash.com/photo-1539185572723-662460883bed?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=f7ef837cad1c2ea1aad6e6dbdde53336&auto=format&fit=crop&w=500&q=60) center;
+    background-size: cover;
+  }
+  
+  #carousel div:nth-child(3) {
+    background: url(https://images.unsplash.com/photo-1539213690067-dab68d432167?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=0461d18762f2a47f97796bd6ed89000b&auto=format&fit=crop&w=500&q=60);
+    background-size: cover;
+    background-position-y: 100%;
+  }
+  
+  #carousel div:nth-child(4) {
+    background: url(https://images.unsplash.com/photo-1539402625777-abd3f7f58139?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=71dd334dfea837fc06c37e18bd505b6b&auto=format&fit=crop&w=500&q=60);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 60%;
+  }
+  
+  #carousel div:nth-child(5) {
+    background: url(https://images.unsplash.com/photo-1539384894456-f4b7ceb0e407?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3849b2c9613fa713a1115faf7105588a&auto=format&fit=crop&w=500&q=60);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 70%;
+  }
+  
+  #carousel div:nth-child(6) {
+    background: url(https://images.unsplash.com/photo-1539319225960-1450af258a87?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=874db0dc30a090251b611badf04a21c4&auto=format&fit=crop&w=500&q=60);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 70%;
+  }
+  
+  #carousel div:nth-child(7) {
+    background: url(https://images.unsplash.com/photo-1539405737265-26a882949c18?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=4866902f002327fbb98f790feb7ea33f&auto=format&fit=crop&w=500&q=60);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 70%;
+  }
+  
+  #carousel div:nth-child(8) {
+    background: url(https://images.unsplash.com/photo-1539436423889-62aa08637497?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=8b02dae6284ffe8b0651fd40a884efcf&auto=format&fit=crop&w=500&q=60z0zz);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 70%;
+    background-position-x: center;
+  }
+  
+  #carousel div:nth-child(9) {
+    background: url(https://images.unsplash.com/photo-1539284974949-8a1771490d41?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=1c850020d238af54e7e5a5038ba89cec&auto=format&fit=crop&w=634&q=80);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 70%;
+  }
+  
+  #carousel div:nth-child(10) {
+    background: url(https://images.unsplash.com/photo-1539250632877-c12b7d5d6fcb?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a608a96e849db36a32bcd68fa7bbd3ec&auto=format&fit=crop&w=500&q=60);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 70%;
+    background-position-x: 30%
+  }
+  
+  #carousel div:nth-child(11) {
+    background: url(https://images.unsplash.com/photo-1539273172294-080f25e3b60e?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=0ebf322a621eb534319263649225c7cd&auto=format&fit=crop&w=500&q=60);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 70%;
+  }
