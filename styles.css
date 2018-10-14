@@ -1,7 +1,7 @@
 #carousel {
     width: 600px;
     height: 200px;
-    margin: 0 auto;
+    margin: 30px auto;
   /*   border: 1px solid black; */
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -16,8 +16,6 @@
   }
   
   #carousel div:nth-child(2) {
-    border-left: 1px solid white;
-    border-right: 1px solid white;
     background: url("https://images.unsplash.com/photo-1539314171919-908b0cd96f03?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3eecf9d3c6b9435476c2967d1c5f35a1&auto=format&fit=crop&w=500&q=60") center no-repeat;
     background-size: cover;
     
@@ -101,4 +99,13 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position-y: 70%;
+  }
+
+  p {
+      max-width: 600px;
+      font-family: "Georgia";
+      font-size: 22px;
+      line-height: 36px;
+      margin: 30px auto;
+      color: #333;
   }
